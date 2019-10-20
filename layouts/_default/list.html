@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      {{ $paginator := .Paginate .Data.Pages }}
+      {{ range $paginator.Pages }}
+      <div class="col-lg-8 mx-auto mb-5">
+        <article class="card rounded-0 border-0">
+          <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}" class="card-img-top rounded-top-0">
+          <div class="card-body px-0">
+            <a href="{{ .Permalink }}" class="h4 d-block">{{ .Title | markdownify }}</a>
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="ti-pencil-alt text-primary mr-2"></i> By {{ .Params.Author }}</li>
+              <li class="list-inline-item"><i class="ti-calendar text-primary mr-2"></i>
+                {{ .PublishDate.Format "02 Jan, 2006" }}</li>
+            </ul>
+            <p>{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}
