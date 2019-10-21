@@ -1,7 +1,6 @@
 .navigation {
   transition: .3s ease;
   background: $white;
-  z-index: 9999;
   @include desktop {
     border-bottom: 1px solid $border-color;
     .navbar{

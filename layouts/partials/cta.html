@@ -8,7 +8,7 @@
         <h2 class="text-white">{{ .title | markdownify }}</h2>
         <p class="text-white">{{ .content | markdownify }}</p>
         {{ with .button }}
-        <a href="{{ .link }}" class="btn btn-light">{{ .label }}</a>
+        <a href="{{ .link | absURL }}" class="btn btn-light">{{ .label }}</a>
         {{ end }}
       </div>
       <div class="col-lg-4 col-md-5 position-relative">
