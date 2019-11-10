@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://hargo.netlify.com/"
+baseURL = "https://examplesite.com"
 languageCode = "en-us"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo"
