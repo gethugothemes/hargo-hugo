@@ -5,7 +5,7 @@ title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo"
 summaryLength = "20"
 paginate = 10
-disqusShortname = "hargo"
+disqusShortname = ""
 
 ############################# Plugins ##############################
 [params.plugins]
