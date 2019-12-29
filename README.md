@@ -1,5 +1,5 @@
 <div align="center">
-<h1><a href="https://gethugothemes.com/">Hargo</a></h1>
+<h1><a href="https://gethugothemes.com/products/hargo/">Hargo</a></h1>
 <img src="https://user-images.githubusercontent.com/37659754/67154529-96242e00-f31f-11e9-9718-42382476e405.gif" alt="screenshot" width="100%">
 </div>
 
@@ -31,7 +31,7 @@ Navigate to your themes folder in your Hugo site and use the following commands:
 ```
 $ mkdir themes
 $ cd themes
-$ git clone git@github.com:themefisher/hargo-hugo-ecommerce-theme.git
+$ git clone git@github.com:themefisher/hargo.git
 ```
 
 ## Main features
@@ -45,8 +45,8 @@ $ git clone git@github.com:themefisher/hargo-hugo-ecommerce-theme.git
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Navigator Template. Please Search [existing issues](https://github.com/themefisher/hargo-hugo-ecommerce-theme/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/hargo-hugo-ecommerce-theme/issues)
+We use GitHub Issues as the official bug tracker for the Navigator Template. Please Search [existing issues](https://github.com/themefisher/hargo/issues). It’s possible someone has already reported the same problem.
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/hargo/issues)
 
 ## Technical Support or Questions
 

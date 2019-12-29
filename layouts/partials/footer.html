@@ -6,22 +6,22 @@
             alt="{{ .Site.Title }}"></a>
       </div>
       <div class="col-md-3 col-sm-6">
-        <h6 class="font-weight-medium mb-4">Important Links</h6>
+        <h5 class="font-weight-medium mb-4">Important Links</h5>
         <ul class="list-unstyled">
           {{ range .Site.Menus.footer }}
-          <li class="mb-3"><a class="text-color" href="{{ .URL | absURL }}"><small>{{ .Name }}</small></a></li>
+          <li class="mb-3"><a class="text-color" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </div>
       <div class="col-md-4 col-sm-6">
-        <h6 class="font-weight-medium mb-4">Connect With Us</h6>
+        <h5 class="font-weight-medium mb-4">Connect With Us</h5>
         <ul class="list-unstyled mb-5">
           <li class="mb-3"><a class="text-color" href="tel:{{ .Site.Params.mobile }}"><i
                 class="ti-mobile text-primary mr-2"></i>
-              <small>{{ .Site.Params.mobile }}</small></a></li>
+              {{ .Site.Params.mobile }}</a></li>
           <li class="mb-3"><a class="text-color" href="mailto:{{ .Site.Params.email }}"><i
-                class="ti-email text-primary mr-2"></i> <small>{{ .Site.Params.email }}</small></a></li>
-          <li class="mb-3"><i class="ti-location-pin text-primary mr-2"></i> <small>{{ .Site.Params.location }}</small>
+                class="ti-email text-primary mr-2"></i> {{ .Site.Params.email }}</a></li>
+          <li class="mb-3"><i class="ti-location-pin text-primary mr-2"></i> {{ .Site.Params.location }}
           </li>
         </ul>
         <!-- social icon -->
@@ -32,7 +32,7 @@
         </ul>
       </div>
       <div class="col-lg-4 col-md-5">
-        <h6 class="font-weight-medium mb-4">Contact us</h6>
+        <h5 class="font-weight-medium mb-4">Contact us</h5>
         <form action="{{ .Site.Params.contact.formAction }}" method="POST">
           <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
           <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
@@ -43,7 +43,7 @@
     </div>
     <div class="row">
       <div class="col-12 text-center py-4">
-        <small>{{ .Site.Params.copyright | markdownify  }}</small>
+        {{ .Site.Params.copyright | markdownify  }}
       </div>
     </div>
   </div>
