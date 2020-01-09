@@ -52,7 +52,7 @@
   <div class="container">
     <div id="map_canvas" data-latitude="{{ with .Site.Params.mapLatitude }} {{ . }} {{ end }}"
       data-longitude="{{ with .Site.Params.mapLongitude }} {{ . }} {{ end }}"
-      data-marker="{{ with .Site.Params.mapMarker }} {{ . | absURL }} {{ end }}"></div>
+      data-marker="{{ with .Site.Params.mapMarker }} {{ . | absURL }} {{ end }}" data-marker-name="{{ .Site.Title }}"></div>
   </div>
 </section>
 {{ end }}

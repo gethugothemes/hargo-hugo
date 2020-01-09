@@ -5,6 +5,7 @@ function initialize() {
   var latitude = $('#map_canvas').attr('data-latitude');
   var longitude = $('#map_canvas').attr('data-longitude');
   var mapMarker = $('#map_canvas').attr('data-marker');
+  var mapMarkerName = $('#map_canvas').attr('data-marker-name');
   var nottingham = new google.maps.LatLng(latitude, longitude);
   var style = [{
       "featureType": "road",
@@ -70,7 +71,7 @@ function initialize() {
     position: nottingham,
     map: map,
     icon: pinIcon,
-    title: 'Hargo'
+    title: mapMarkerName
   });
 }
 var map = document.getElementById('map_canvas');
