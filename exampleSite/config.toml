@@ -12,21 +12,21 @@ disqusShortname = ""
 
   # CSS Plugins
   [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
+  link = "plugins/bootstrap/bootstrap.min.css"
   [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
+  link = "plugins/slick/slick.css"
   [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
+  link = "plugins/themify-icons/themify-icons.css"
 
   # JS Plugins
   [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
+  link = "plugins/jQuery/jquery.min.js"
   [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
+  link = "plugins/bootstrap/bootstrap.min.js"
   [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
+  link = "plugins/slick/slick.min.js"
   [[params.plugins.js]]
-  URL = "plugins/google-map/gmap.js"
+  link = "plugins/google-map/gmap.js"
 
   
 ############################## navigation ###############################

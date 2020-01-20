@@ -53,7 +53,7 @@
 <script src="{{ .Site.Params.gmapAPI | absURL }}"></script>
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range .Site.Params.plugins.js}}
-<script src="{{ .URL | absURL }}"></script>
+<script src="{{ .link | absURL }}"></script>
 {{ end }}
 
 <!-- snipcart -->
