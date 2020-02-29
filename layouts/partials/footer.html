@@ -68,6 +68,9 @@
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
+
+
+{{ with .Site.Params.googleAnalitycsID }}
 {{ "<!-- google analitycs -->" | safeHTML }}
 <script>
   (function (i, s, o, g, r, a, m) {
@@ -81,9 +84,10 @@
     a.src = g;
     m.parentNode.insertBefore(a, m)
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
+  ga('create', '{{ . }}', 'auto');
   ga('send', 'pageview');
 </script>
+{{ end }}
 
 <!-- product rating -->
 {{ if .Site.Params.rating.enable }}

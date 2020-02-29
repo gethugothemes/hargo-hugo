@@ -92,7 +92,7 @@ mapLatitude = "51.5223477"
 mapLongitude = "-0.1622023"
 mapMarker = "images/marker.png"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "" # Your ID
 # Contact Information
 mobile = "0124857985320"
 email = "demo@email.com"
