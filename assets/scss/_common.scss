@@ -181,6 +181,11 @@ a:hover {
 .form-control {
   height: 50px;
   border: 1px solid $primary-color;
+  &:focus{
+    outline: 0;
+    box-shadow: none;
+    border-color: $primary-color;
+  }
 }
 
 textarea.form-control {
