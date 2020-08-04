@@ -28,6 +28,8 @@ Hargo is a fully responsive and stunning Single Product E-Commerce Template firs
 
 Navigate to your themes folder in your Hugo site and use the following commands:
 
+**Note : You must use `hugo-extended` version to compile SCSS**
+
 ```
 $ mkdir themes
 $ cd themes
