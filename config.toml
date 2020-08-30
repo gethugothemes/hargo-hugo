@@ -98,7 +98,7 @@ googleAnalitycsID = "" # Your ID
 email = "info@drive.com"
 location = "Tallinn, Estonia"
 # copyright
-copyright = "| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) All Rights Reserved |"
+copyright = "| Copyright &copy; 2020 Ecordinary/ Theme: [Gethugothemes](https://gethugothemes.com)|"
 
   # Preloader
   [params.preloader]
