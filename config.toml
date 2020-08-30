@@ -81,7 +81,7 @@ disqusShortname = ""
 
 #################### default parameters ################################
 [params]
-logo = "images/logo_ecordinary.png"
+logo = ""
 home = "Home"
 # Meta data
 description = "Eclo friendly biodegradable products"
