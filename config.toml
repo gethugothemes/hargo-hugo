@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ""
+baseURL = "https://ecordinary.netlify.app/"
 languageCode = "en-us"
 title = "Ecordinary"
 theme = "hargo"
