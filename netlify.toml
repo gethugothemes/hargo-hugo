@@ -1,6 +1,6 @@
 [build]
-  publish = "webSite/public"
-  command = "cd webSite && hugo --gc --themesDir ../.."
+  publish = "exampleSite/public"
+  command = "cd exampleSite && hugo --gc --themesDir ../.."
   
 [build.environment]
   HUGO_BASEURL = "/"
