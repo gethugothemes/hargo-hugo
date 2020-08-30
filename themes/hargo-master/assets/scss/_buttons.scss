@@ -1,0 +1,98 @@
+/* Button style */
+.btn {
+  font-size: 14px;
+  font-family: $primary-font;
+  text-transform: capitalize;
+  padding: 13px 40px;
+  border-radius: 35px;
+  font-weight: 500;
+  border: 1px solid;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    box-shadow: 0 8px 10px rgba(33,33,33,.2) !important;
+  }
+}
+
+.btn-sm{
+  padding: 10px 30px;
+}
+
+.btn-primary {
+  background: $primary-gradient;
+  color: $white;
+  border-color: $primary-color;
+
+  &:active,
+  &:hover,
+  &.focus,
+  &.active {
+    background: $primary-gradient !important;
+    border-color: $primary-color !important;
+  }
+}
+
+.btn-outline-primary {
+  background: transparent;
+  color: $text-color;
+  border-color: $primary-color;
+  transition: none;
+
+  &:active,
+  &:hover,
+  &.focus,
+  &.active {
+    background: $primary-gradient !important;
+    border-color: $primary-color !important;
+    color: $white;
+  }
+}
+
+
+.btn-light {
+  background: $white;
+  color: $text-color;
+  border-color: $white;
+
+  &:active,
+  &:hover,
+  &.focus,
+  &.active {
+    background: $white !important;
+    border-color: $white !important;
+  }
+}
+
+
+.btn-play{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  line-height: 45px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  color: $white;
+}
+
+.btn-play-lg{
+  height: 70px;
+  width: 70px;
+  padding: 0;
+  line-height: 70px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  color: $white;
+  font-size: 30px;
+  box-shadow: 0 0 0 20px rgba($color: $white, $alpha: .5);
+  transition: .2s ease;
+  &:hover{
+    box-shadow: 0 0 0 25px rgba($color: $white, $alpha: .5);
+  }
+}

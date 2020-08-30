@@ -1,0 +1,169 @@
+.navigation {
+  transition: .3s ease;
+  background: $white;
+  @include desktop {
+    border-bottom: 1px solid $border-color;
+    .navbar{
+      padding: 10px 0;
+    }
+  }
+  &.sticky-top{
+    z-index: 9999;
+  }
+}
+
+.nav-bg {
+  border-bottom: 1px solid $border-color;
+
+  .navbar {
+    padding: 10px 0;
+  }
+}
+
+.navbar {
+  padding: 25px 0;
+  transition: .3s ease;
+
+  .dropdown {
+    &:hover {
+      .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+
+    &-menu {
+      box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+      padding: 15px;
+      border: 0;
+      top: 50px;
+      left: -10px;
+      border-radius: 0;
+      display: block;
+      visibility: hidden;
+      transition: .3s ease;
+      opacity: 0;
+      transform: scale(.95);
+      background: $white;
+
+      @include desktop {
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        transform-origin: unset;
+      }
+
+      &.show {
+        visibility: hidden;
+
+        @include desktop {
+          visibility: visible;
+          display: block;
+        }
+      }
+    }
+
+    &-item {
+      color: $text-color;
+      transition: .2s ease;
+      padding: 10px;
+
+      &:hover {
+        color: $primary-color;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.nav-item {
+  margin: 0;
+
+  .nav-link {
+    text-transform: capitalize;
+    font-size: 18px;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $text-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px;
+}
+
+
+/* search */
+.search-btn {
+  border: 0;
+  background: transparent;
+  color: $white;
+}
+
+.search-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+  visibility: hidden;
+  transition: .2s ease;
+  opacity: 0;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.search-box {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  background: $white;
+  font-size: 20px;
+  padding: 0;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.search-close {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  page-break-after: 10px;
+  font-size: 20px;
+}
+
+/* cart */
+.cart {
+  background: transparent;
+  border: 0;
+  position: relative;
+
+  @include desktop {
+    position: absolute;
+    top: 23px;
+    right: 50px;
+  }
+
+  .badge {
+    position: absolute;
+    top: -5px;
+    border-radius: 50%;
+    right: -10px;
+  }
+}

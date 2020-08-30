@@ -1,0 +1,130 @@
+<footer class="section pb-0">
+  <div class="container">
+    <div class="row border-bottom pb-5 justify-content-between">
+      <div class="col-12 text-center section-sm">
+        <a href="{{ site.BaseURL }}"><img src="{{ site.Params.logo | absURL }}" class="img-fluid"
+            alt="{{ site.Title }}"></a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h5 class="font-weight-medium mb-4">Important Links</h5>
+        <ul class="list-unstyled">
+          {{ range site.Menus.footer }}
+          <li class="mb-3"><a class="text-color" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <h5 class="font-weight-medium mb-4">Connect With Us</h5>
+        <ul class="list-unstyled mb-5">
+          <li class="mb-3"><a class="text-color" href="tel:{{ site.Params.mobile }}"><i
+                class="ti-mobile text-primary mr-2"></i>
+              {{ site.Params.mobile }}</a></li>
+          <li class="mb-3"><a class="text-color" href="mailto:{{ site.Params.email }}"><i
+                class="ti-email text-primary mr-2"></i> {{ site.Params.email }}</a></li>
+          <li class="mb-3"><i class="ti-location-pin text-primary mr-2"></i> {{ site.Params.location }}
+          </li>
+        </ul>
+        <!-- social icon -->
+        <ul class="list-inline">
+          {{ range site.Params.social }}
+          <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }} text-primary"></i></a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-5">
+        <h5 class="font-weight-medium mb-4">Contact us</h5>
+        <form action="{{ site.Params.contact.formAction }}" method="POST">
+          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
+          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
+          <textarea name="message" id="message" class="form-control mb-2" placeholder="Your Message"></textarea>
+          <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Send Now</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center py-4">
+        {{ site.Params.copyright | markdownify  }}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{ "<!-- Google Map API -->" | safeHTML }}
+<script src="{{ site.Params.gmapAPI | absURL }}"></script>
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+
+<!-- snipcart -->
+<script type="text/javascript" id="snipcart" src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
+  data-api-key="M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"></script>
+<script>
+  Snipcart.execute('registerLocale', 'en', {
+    powered_by: "Themefisher"
+  });
+</script>
+
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/script.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+
+
+{{ with site.Params.googleAnalitycsID }}
+{{ "<!-- google analitycs -->" | safeHTML }}
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '{{ . }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{{ end }}
+
+<!-- product rating -->
+{{ if site.Params.rating.enable }}
+<script type="text/javascript">
+  (function (d, t, e, m) {
+
+    // Async Rating-Widget initialization.
+    window.RW_Async_Init = function () {
+
+      RW.init({
+        huid: "{{ site.Params.rating.websiteID }}",
+        uid: "{{ site.Params.rating.publicKey }}",
+        source: "website",
+        options: {
+          "size": "medium",
+          "style": "oxygen",
+          "isDummy": false
+        }
+      });
+      RW.render();
+    };
+    // Append Rating-Widget JavaScript library.
+    var rw, s = d.getElementsByTagName(e)[0],
+      id = "rw-js",
+      l = d.location,
+      ck = "Y" + t.getFullYear() +
+      "M" + t.getMonth() + "D" + t.getDate(),
+      p = l.protocol,
+      f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+      a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+    if (d.getElementById(id)) return;
+    rw = d.createElement(e);
+    rw.id = id;
+    rw.async = true;
+    rw.type = "text/javascript";
+    rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+    s.parentNode.insertBefore(rw, s);
+  }(document, new Date(), "script", "rating-widget.com/"));
+</script>
+{{ end }}

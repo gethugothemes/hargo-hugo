@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <article>
+          <h2>{{ .Title }}</h2>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item"><i class="ti-pencil-alt text-primary mr-2"></i> By {{ .Params.Author }}</li>
+            <li class="list-inline-item"><i class="ti-calendar text-primary mr-2"></i>
+              {{ .PublishDate.Format "02 Jan, 2006" }}</li>
+          </ul>
+          <img src="{{ .Params.Image | absURL }}" alt="{{ .Title }}" class="img-fluid w-100 mb-4">
+          <div class="content">
+            {{.Content}}
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}

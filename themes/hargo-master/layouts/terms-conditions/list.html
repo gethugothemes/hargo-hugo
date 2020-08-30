@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-5">
+        <div class="content">
+          {{.Content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}

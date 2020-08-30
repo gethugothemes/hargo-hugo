@@ -1,0 +1,21 @@
+<!-- call to  action -->
+{{ with site.Data.homepage.cta }}
+<section class="py-4 bg-gradient position-relative">
+  <img src="{{ .overlayImage | absURL }}" class="img-fluid overlay-image" alt="">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-7">
+        <h2 class="text-white">{{ .title | markdownify }}</h2>
+        <p class="text-white">{{ .content | markdownify }}</p>
+        {{ with .button }}
+        <a href="{{ .link | absURL }}" class="btn btn-light">{{ .label }}</a>
+        {{ end }}
+      </div>
+      <div class="col-lg-4 col-md-5 position-relative">
+        <img class="cta-image" src="{{ .image | absURL }}" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /call to action -->

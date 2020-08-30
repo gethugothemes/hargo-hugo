@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ if site.Data.contact.contact.enable }}
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-5">
+        <div class="content">
+          {{.Content}}
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="sticky-top top-100">
+        <h3 class="mb-4">Ask Your Question</h3>
+        <form action="{{ site.Params.contact.formAction }}" method="POST">
+          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
+          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
+          <textarea name="message" id="message" class="form-control mb-2" placeholder="Your Message"></textarea>
+          <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Send Now</button>
+        </form>
+      </div></div>
+      {{ with site.Data.faq}}
+      <div class="col-lg-7 offset-lg-1">
+        <div id="accordion" class="mt-5">
+          {{ $.Scratch.Set "counter" 0 }}
+          {{ range .faqItem }}
+          {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+          {{ "<!-- accordion item -->" | safeHTML }}
+          <div class="card mb-1 rounded-0 border-0">
+            <div class="card-header rounded-0 bg-white border p-0 border-0">
+              <a class="card-link h4 d-flex tex-dark mb-0 p-2 justify-content-between" data-toggle="collapse"
+                href="#collapse{{$.Scratch.Get `counter`}}">
+                <span>{{ .title | markdownify }}</span> <div class="ml-3"><i class="ti-plus h6 text-primary text-right border p-2 d-inline-block border-primary"></i></div>
+              </a>
+            </div>
+            <div id="collapse{{$.Scratch.Get `counter`}}" class="collapse" data-parent="#accordion">
+              <div class="card-body p-2 font-secondary text-color">{{ .content | markdownify }}</div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ partial "cta.html" . }}
+
+{{ end }}

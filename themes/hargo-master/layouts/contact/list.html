@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ if site.Data.contact.contact.enable }}
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        {{ with site.Data.contact.contact.office }}
+        <h3 class="mb-4">{{ .title | markdownify }}</h3>
+        <p>{{ .content | markdownify }}</p>
+        {{ end }}
+
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-color" href="tel:{{ site.Params.mobile }}"><i
+                class="ti-mobile text-primary mr-2"></i>
+             {{ site.Params.mobile }}</a></li>
+          <li class="mb-3"><a class="text-color" href="mailto:{{ site.Params.email }}"><i
+                class="ti-email text-primary mr-2"></i>{{ site.Params.email }}</a></li>
+          <li class="mb-3"><i class="ti-location-pin text-primary mr-2"></i>{{ site.Params.location }}
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 offset-lg-1 col-sm-6">
+        {{ with site.Data.contact.contact.opennigHour }}
+        <h3 class="mb-4">{{ .title | markdownify }}</h3>
+        <ul class="list-unstyled">
+          {{ range .dayTimeList }}
+          <li class="mb-3">{{ .dayTime | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="col-lg-4">
+        <h3 class="
+        mb-4">Contact us</h3>
+        <form action="{{ site.Params.contact.formAction }}" method="POST">
+          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
+          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
+          <textarea name="message" id="message" class="form-control mb-2" placeholder="Your Message"></textarea>
+          <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Send Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if site.Data.contact.map.enable }}
+<section class="section pt-0">
+  <div class="container">
+    <div id="map_canvas" data-latitude="{{ with site.Params.mapLatitude }} {{ . }} {{ end }}"
+      data-longitude="{{ with site.Params.mapLongitude }} {{ . }} {{ end }}"
+      data-marker="{{ with site.Params.mapMarker }} {{ . | absURL }} {{ end }}" data-marker-name="{{ site.Title }}"></div>
+  </div>
+</section>
+{{ end }}
+
+{{ partial "cta.html" . }}
+
+{{ end }}
