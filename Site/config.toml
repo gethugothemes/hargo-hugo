@@ -1,7 +1,7 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://ecordinary.com"
 languageCode = "en-us"
-title = "Hargo | Hugo Ecommerce Site"
+title = "Ecordinary | green and ordinary"
 theme = "hargo"
 summaryLength = "20"
 paginate = 10
@@ -33,7 +33,7 @@ disqusShortname = ""
 [menu]
     
   [[menu.main]]
-  name = "Products"
+  name = "Product"
   URL = "products"
   weight = 1
   
@@ -96,7 +96,7 @@ googleAnalitycsID = "" # Your ID
 # Contact Information
 mobile = "0124857985320"
 email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+location = "Tallin, Estonia"
 # copyright
 copyright = "| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) All Rights Reserved |"
 
