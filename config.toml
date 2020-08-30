@@ -84,8 +84,8 @@ disqusShortname = ""
 logo = "images/logo_ecordinary.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "Eclo friendly biodegradable products"
+author = "Ecordinary"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 mapLatitude = "51.5223477"
@@ -94,7 +94,7 @@ mapMarker = "images/marker.png"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # Contact Information
-# mobile = "0124857985320"
+mobile = "0124857985320"
 email = "info@drive.com"
 location = "Tallinn, Estonia"
 # copyright
