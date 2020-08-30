@@ -1,7 +1,7 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://https://ecordinary.netlify.app/"
 languageCode = "en-us"
-title = "Hargo | Hugo Ecommerce Site"
+title = "Ecordinary"
 theme = "hargo"
 summaryLength = "20"
 paginate = 10
