@@ -1,6 +1,6 @@
 ############################ banner ##########################
 banner:
-  enable : true
+  enable : false
   title : "Best Beauty Cream For Your Skin"
   content : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
           dolore magna aliquyam erat, sed dia"
@@ -12,13 +12,13 @@ banner:
     link : "products"
   # demo video
   video:
-    enable : true
+    enable : false
     videoURL : "https://www.youtube.com/embed/wf4F2-9UXUo"
 
 ########################## About ##############################
 about:
   enable : true
-  title : "About Our Product"
+  title : "About Ecordinary"
   content : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
           dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
           clita kasd gubergren,"
@@ -44,36 +44,31 @@ material:
           dol."
   materialItem:
     # material item loop
-    - title : "Matcha Seeds"
+    - title : "Cellulose Sponge"
       image : "images/material/material-1.png"
       content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
       
     # material item loop
-    - title : "Aloe Vera"
+    - title : "Loofah"
       image : "images/material/material-2.png"
       content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
       
     # material item loop
-    - title : "Turmeric"
+    - title : "Cotton"
       image : "images/material/material-3.png"
       content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
       
-    # material item loop
-    - title : "Tulshi leaf"
-      image : "images/material/material-4.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-
 ########################### Advantage #########################
 advantage:
   enable : true
   title : "Advantages Of Using <br> Our Product"
-  subtitle : "Lorem ipsum dolor sit amet, da decal consetetur<br> sadipscing elitr, sed diam nonumya eirmod"
+  subtitle : "The best sponge ever. Really"
   image : "images/advantage.png"
   advantageList:
     # advantage list loop
-    - listItem : "Extremely lightweight"
-    - listItem : "Excellent breathability"
-    - listItem : "Can increase Cell activation"
+    - listItem : "No chemicals"
+    - listItem : "Just cotton"
+    - listItem : "Cellulose Sponge"
     - listItem : "Glowing Skin In 7 Days"
     - listItem : "Increasing Glow Of Face"
     - listItem : "More Beautiful Face Skin"
