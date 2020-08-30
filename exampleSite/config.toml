@@ -1,7 +1,7 @@
 ######################## default configuration ####################
-baseURL = "https://https://ecordinary.netlify.app"
+baseURL = "https://examplesite.com"
 languageCode = "en-us"
-title = "Ecordinary | green and ordinary"
+title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo"
 summaryLength = "20"
 paginate = 10
@@ -33,7 +33,7 @@ disqusShortname = ""
 [menu]
     
   [[menu.main]]
-  name = "Product"
+  name = "Products"
   URL = "products"
   weight = 1
   
@@ -96,7 +96,7 @@ googleAnalitycsID = "" # Your ID
 # Contact Information
 mobile = "0124857985320"
 email = "demo@email.com"
-location = "Tallin, Estonia"
+location = "Dhaka, Bangladedsh"
 # copyright
 copyright = "| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) All Rights Reserved |"
 
