@@ -1,8 +1,8 @@
 [build]
 publish = "public"
-command = "hugo"
+command = "hugo --gc"
 
 [context.production.environment]
-HUGO_VERSION = "0.73.0"
+HUGO_VERSION = "0.74.3"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
