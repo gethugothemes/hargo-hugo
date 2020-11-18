@@ -7,7 +7,7 @@ draft: false
 description : "For Silky Hair"
 
 # product Price
-price: "30.00$"
+price: "30.00"
 priceBefore: ""
 
 # Product Short Description

@@ -7,8 +7,8 @@ draft: false
 description : "For Glowing Skin"
 
 # product Price
-price: "20.00$"
-priceBefore: "25.00$"
+price: "20.00"
+priceBefore: "25.00"
 
 # Product Short Description
 shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
