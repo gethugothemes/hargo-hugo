@@ -101,6 +101,7 @@ location = "Dhaka, Bangladedsh"
 copyright = "| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) All Rights Reserved |"
 # Snipcart Credentials
 snipcartApiKey = "M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"
+currencySimbol = "$"
 
   # Preloader
   [params.preloader]
