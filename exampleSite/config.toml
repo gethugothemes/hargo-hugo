@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://examplesite.com"
-languageCode = "en-us"
+languageCode = "en"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo"
 summaryLength = "20"
