@@ -2,27 +2,30 @@
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
 
-  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  {{ "<!-- Mobile Responsive Meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
-  {{ "<!-- plugins -->" | safeHTML }}
+  {{ "<!-- Plugins -->" | safeHTML }}
   {{ range site.Params.plugins.css }}
   <link rel="stylesheet" href="{{ .link | absURL }}">
   {{ end }}
-  <link rel="preconnect" href="https://app.snipcart.com">
-  <link rel="preconnect" href="https://cdn.snipcart.com">
-  <link id="snipcart-theme" type="text/css" href="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.css" rel="stylesheet">
-  <script async src="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.js"></script>
+
+  {{ with site.Params.snipcartApiKey }}
+  {{ "<!-- Snipcart -->" | safeHTML }}
+  <link rel="preconnect" href="https://app.snipcart.com/">
+  <link rel="preconnect" href="https://cdn.snipcart.com/">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css">
+  <script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
+  {{ end }}
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
-  {{ "<!--Favicon-->" | safeHTML }}
+  {{ "<!-- Favicon -->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
-
 </head>
