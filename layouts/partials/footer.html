@@ -51,7 +51,7 @@
 
 {{ with site.Params.snipcartApiKey }}
 {{ "<!-- Snipcart -->" | safeHTML }}
-<div id="snipcart" data-api-key="{{ site.Params.snipcartApiKey }}" hidden></div>
+<div id="snipcart" data-api-key="{{ . }}" hidden></div>
 {{ end }}
 
 {{ "<!-- Google Maps API -->" | safeHTML }}
