@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://examplesite.com"
-languageCode = "en-us"
+languageCode = "en"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo"
 summaryLength = "20"
@@ -101,7 +101,7 @@ location = "Dhaka, Bangladedsh"
 copyright = "| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) All Rights Reserved |"
 # Snipcart Credentials
 snipcartApiKey = "M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"
-currencySimbol = "$"
+currencySymbol = "$"
 
   # Preloader
   [params.preloader]
