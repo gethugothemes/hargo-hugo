@@ -17,8 +17,10 @@
             <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
             <p>{{ .Params.Description }}</p>
             <div class="mb-4">
-              <span class="lead text-primary">{{ .Params.Price }} {{ site.Params.currencySymbol }}</span>
-              <s>{{ .Params.PriceBefore }} {{ site.Params.currencySymbol }}</s>
+              {{ if .Params.PriceBefore }}
+              <s>{{ site.Params.currencySymbol }}{{ .Params.PriceBefore }}</s>
+              {{ end }}
+              <span class="lead text-primary">{{ site.Params.currencySymbol }}{{ .Params.Price }}</span>
             </div>
             <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="{{ .Params.ProductID }}"
               data-item-name="{{ .Title }}" {{ range first 1 .Params.Images }} data-item-image="{{ .image | absURL }}"
