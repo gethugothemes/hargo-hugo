@@ -1,66 +1,116 @@
-<div align="center">
-<h1><a href="https://gethugothemes.com/products/hargo/">Hargo</a></h1>
-<img src="https://user-images.githubusercontent.com/37659754/67154529-96242e00-f31f-11e9-9718-42382476e405.gif" alt="screenshot" width="100%">
-</div>
+<h1 align=center>Hargo Hugo | <a target="_blank" href="https://demo.gethugothemes.com/hargo" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fhargo%2F">Page Speed (57%)</a></h1>
 
-Hargo is a fully responsive and stunning Single Product E-Commerce Template first time in Hugo ecosystem. It has a lot's of Unique and essential features for making a full functional E-commerce website. It's design is very minimal and clean only focus on product presentation. It's Coding structure is W3valid so you can customize as your requirement without any hassle. This theme is very SEO friendly and Powered by Hugo, so super fast Loading Speed in it's DNA.
+<p align=center>
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.64.0&color=f00&logo=hugo" />
+  </a>
 
-**The images are only for demonstration purpose, Please don't use those images.**
+  <a href="https://github.com/themefisher/hargo-hugo/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/themefisher/hargo-hugo" alt="license"></a>
 
-## Table of Contents
+  <img src="https://img.shields.io/github/languages/code-size/themefisher/hargo-hugo" alt="code size">
 
-- [Demo](#demo)
-- [Installation](#installation)
-- [Main Features](#main-features)
-- [Reporting Issues](#reporting-issues)
-- [Technical Support or Questions](#technical-support-or-questions-(paid))
-- [More Hugo Themes](https://gethugothemes.com/shop/)
+  <a href="https://github.com/themefisher/hargo-hugo/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/themefisher/hargo-hugo" alt="contributors"></a>
 
-## Demo
+  <a href="https://twitter.com/intent/follow?screen_name=gethugothemes">
+    <img src="https://img.shields.io/twitter/follow/gethugothemes?style=social&logo=twitter"
+      alt="follow on Twitter"></a>
+</p>
 
-| Products  | FAQ  | Blog  | Contact  |
-|---|---|---|---|
-| ![products](https://user-images.githubusercontent.com/37659754/67154818-18165600-f324-11e9-8ac5-980c1ad1a151.png) | ![faq](https://user-images.githubusercontent.com/37659754/67154832-35e3bb00-f324-11e9-9b8f-3cc8d7fe3f97.png) | ![blog](https://user-images.githubusercontent.com/37659754/67154837-485df480-f324-11e9-8792-128fc4b14632.png) | ![contact](https://user-images.githubusercontent.com/37659754/67154841-5ad82e00-f324-11e9-8c00-5b6f1127c643.png) |
+---
 
-[Live Demo](http://demo.themefisher.com/hargo-hugo/)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37659754/67154529-96242e00-f31f-11e9-9718-42382476e405.gif" alt="screenshot" width="100%">
+</p>
 
-## Installation
+---
+## Features
+- Google analytics  support
+- CSS and Js bundle with hugo pipe
+- Netlify settings predefine
+- Contact form Support
+- Compitable with snipcart
+- Google map support
+- Google page speed optimized ( 57% )
+- Open graph meta tag
+- Twitter card meta tag
 
-Navigate to your themes folder in your Hugo site and use the following commands:
 
-**Note : You must use `hugo-extended` version to compile SCSS**
+## Local development
 
-```
-$ mkdir themes
-$ cd themes
-$ git clone git@github.com:themefisher/hargo.git
+```bash
+# clone the repository
+git clone git@github.com:themefisher/hargo-hugo.git
+
+# cd in the project directory
+$ cd hargo-hugo/exampleSite/
+
+# Start local dev server
+$ hugo server --themesDir ../..
 ```
 Or Check out [Full Documentation](https://docs.gethugothemes.com/hargo/?ref=github).
 
-## Main features
+## Content Management System
 
-- Bootstrap 4 Powered
-- Google Analytics
-- SEO Friendly
-- E-commerce Template
-- Contact Page , Faq Page
-- Responsive Ready
-- Snipcart Added
+[![import to
+Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/hargo-hugo&engine=hugo&version=0.87.0)
 
+This project has been pre-configured to work with [Forestry](https://forestry.io) a git-based CMS, [import your
+repository in Forestry](https://app.forestry.io/quick-start?repo=themefisher/hargo-hugo&engine=hugo&version=0.87.0) and
+you will be able to edit and preview your site ✨.
+
+Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
+## Deployment and hosting
+
+[![Deploy to
+Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/themefisher/hargo-hugo)
+
+Follow the steps.
+
+## Prefer a video? (Hugo + Netlify + Forestry)
+Build your website with **hargo Hugo** theme by following these easy steps (No Coding Required!)
+[Video Tutorial](https://youtu.be/ResipmZmpDU).
+
+<!-- reporting issue -->
 ## Reporting Issues
+We use GitHub Issues as the official bug tracker for the hargo Template. Please Search [existing
+issues](https://github.com/themefisher/hargo-hugo/issues). Someone may have already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new
+issue](https://github.com/themefisher/hargo-hugo/issues).
 
-We use GitHub Issues as the official bug tracker for the Navigator Template. Please Search [existing issues](https://github.com/themefisher/hargo/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/hargo/issues)
+## Hargo Hugo Powered Websites
+- https://chivatazosapuestasdeportivas.com/
+- https://www.charmedflora.com/
 
-## Technical Support or Questions (Paid)
+ Want to submit your own website powered by Hargo Hugo? You can submit it [here](https://github.com/themefisher/hargo-hugo/discussions/33).
 
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.  
+<!-- licence -->
+## License
+Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
+[Gethugothemes](https://gethugothemes.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/hargo-hugo/blob/master/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their licenses. We don't have permission to
+share those images.
+
+<!-- resources -->
+## Special Thanks
+- [Bootstrap](https://getbootstrap.com)
+- [Jquery](https://jquery.com)
+- [Themify Icons](https://themify.me/themify-icons)
+- [Slick Slider](https://kenwheeler.github.io/slick/)
+- [Google Fonts](https://fonts.google.com/)
+- [All Contributors](https://github.com/themefisher/hargo-hugo/graphs/contributors)
+
 
 ## Hire Us
-We are available for Hiring of your next HUGO project. Drop Us a mail [mehedi@themefisher.com](mailto:mehedi@themefisher.com)
+We are available for **Hiring** for your next HUGO project. Please, check our
+[services](https://cutt.ly/ght-service)
 
-## Premium Themes
-
-| [![Mega-Bundle-HUGO](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png)](https://themefisher.com/products/hugo-mega-bundle/) | [![Adrian](https://gethugothemes.com/wp-content/uploads/edd/2019/12/adrian-ecommerce-template.jpg)](https://gethugothemes.com/products/adrian/) | [![influencer](https://gethugothemes.com/wp-content/uploads/2019/11/Influencer.png)](https://gethugothemes.com/products/influencer-hugo/) |
+<!-- premium themes -->
+## Premium Themes By Us
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![revolve](https://demo.gethugothemes.com/thumbnails/revolve.webp)](https://gethugothemes.com/products/revolve/) | [![navigator](https://demo.gethugothemes.com/thumbnails/navigator.webp)](https://gethugothemes.com/products/navigator/) |
 |:---:|:---:|:---:|
-| **Hugo Mega Bundle**  | **Adrian**  | **Influencer**  |
+| **Premium Theme Bundle (40+)** | **Revolve** | **Navigator** |
