@@ -1,4 +1,4 @@
-<h1 align=center>Hargo Hugo | <a target="_blank" href="https://demo.gethugothemes.com/hargo" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fhargo%2F">Page Speed (57%)</a></h1>
+<h1 align=center>Hargo Hugo | <a target="_blank" href="https://demo.gethugothemes.com/hargo" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fhargo%2F">Page Speed (64%)</a></h1>
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
@@ -32,7 +32,7 @@
 - Contact form Support
 - Compitable with snipcart
 - Google map support
-- Google page speed optimized ( 57% )
+- Google page speed optimized ( 64% )
 - Open graph meta tag
 - Twitter card meta tag
 
@@ -107,7 +107,7 @@ share those images.
 
 ## Hire Us
 We are available for **Hiring** for your next HUGO project. Please, check our
-[services](https://cutt.ly/ght-service)
+[services](https://gethugothemes.com/services/?ref=github)
 
 <!-- premium themes -->
 ## Premium Themes By Us
