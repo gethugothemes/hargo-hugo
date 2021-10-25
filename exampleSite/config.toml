@@ -2,7 +2,7 @@
 baseURL = "https://examplesite.com"
 languageCode = "en"
 title = "Hargo | Hugo Ecommerce Site"
-theme = "hargo"
+theme = "hargo-hugo"
 summaryLength = "20"
 paginate = 10
 disqusShortname = ""
