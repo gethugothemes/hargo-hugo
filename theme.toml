@@ -4,7 +4,7 @@
 name = "Hargo Hugo E-Commerce Theme"
 license = "MIT"
 licenselink = "https://github.com/themefisher/Hargo-hugo-ecommerce-theme/blob/master/LICENSE"
-description = "Hargo, An E-commerce theme powered by hugo"
+description = "Hargo is an E-commerce theme powered by Hugo and Snipcart. It's fully functional, users can order items and also payments throw this theme"
 homepage = "https://gethugothemes.com/products/hargo/"
 demosite = "https://demo.gethugothemes.com/hargo/"
 tags = ["Ecommerce", "bootstrap", "blog", "contact", "responsive", "gethugothemes", "clean" , "Single Product", "Minimal", "light", "google analytics", "disqus", "mobile", "fast", "customizable", "white", "flex", "pages", "hugo themes", "hugo templates", "netlify", "Themefisher"]
