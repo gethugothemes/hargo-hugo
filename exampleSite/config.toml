@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://demo.gethugothemes.com/hargo/examplesite/"
 languageCode = "en"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo-hugo"
@@ -34,48 +34,48 @@ disqusShortname = ""
 
   [[menu.main]]
   name = "Products"
-  URL = "products"
+  URL = "products/"
   weight = 1
 
   [[menu.main]]
   name = "Blog"
-  URL = "blog"
+  URL = "blog/"
   weight = 2
 
   [[menu.main]]
   name = "FAQ"
-  URL = "faq"
+  URL = "faq/"
   weight = 3
 
   [[menu.main]]
   name = "Contact"
-  URL = "contact"
+  URL = "contact/"
   weight = 4
 
   ############# footer menu #############
   [[menu.footer]]
   name = "Products"
-  URL = "products"
+  URL = "products/"
   weight = 1
 
   [[menu.footer]]
   name = "Blog"
-  URL = "blog"
+  URL = "blog/"
   weight = 2
 
   [[menu.footer]]
   name = "FAQ"
-  URL = "faq"
+  URL = "faq/"
   weight = 3
 
   [[menu.footer]]
   name = "Terms & Conditions"
-  URL = "terms-conditions"
+  URL = "terms-conditions/"
   weight = 4
 
   [[menu.footer]]
   name = "Contact"
-  URL = "contact"
+  URL = "contact/"
   weight = 5
 
 

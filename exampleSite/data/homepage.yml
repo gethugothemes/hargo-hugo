@@ -9,7 +9,7 @@ banner:
   button:
     enable : true
     label : "All Products"
-    link : "products"
+    link : "products/"
   # demo video
   video:
     enable : true
@@ -34,7 +34,7 @@ cta:
   overlayImage : "images/cta-overlay.png"
   button:
     label : "All Products"
-    link : "products"
+    link : "products/"
 
 ######################## raw material #######################
 material:
