@@ -82,6 +82,7 @@ issue](https://github.com/themefisher/hargo-hugo/issues).
 ## Hargo Hugo Powered Websites
 - https://chivatazosapuestasdeportivas.com/
 - https://www.charmedflora.com/
+- https://studiorisha.com/
 
  Want to submit your own website powered by Hargo Hugo? You can submit it [here](https://github.com/themefisher/hargo-hugo/discussions/33).
 
