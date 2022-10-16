@@ -1,4 +1,5 @@
 <!-- call to  action -->
+{{ if site.Data.homepage.cta.enable }}
 {{ with site.Data.homepage.cta }}
 <section class="py-4 bg-gradient position-relative">
   <img src="{{ .overlayImage | absURL }}" class="img-fluid overlay-image" alt="">
@@ -17,5 +18,6 @@
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}
 <!-- /call to action -->
