@@ -1,4 +1,8 @@
-<h1 align=center>Hargo Hugo | <a target="_blank" href="https://demo.gethugothemes.com/hargo" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fhargo%2F">Page Speed (64%)</a></h1>
+<h1 align=center>Hargo Hugo</h1> 
+<p align=center> Hargo is a modern, sleek and fresh online store theme for Hugo.</p>
+<h2 align="center"><a target="_blank" href="https://demo.gethugothemes.com/hargo" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fhargo%2Fsite%2F&form_factor=desktop">Page Speed (80%)</a> </h2>
+
+
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
@@ -25,14 +29,14 @@
 </p>
 
 ---
-## Features
+## Key Features
 - Google analytics  support
 - CSS and Js bundle with hugo pipe
 - Netlify settings predefine
 - Contact form Support
 - Compitable with snipcart
 - Google map support
-- Google page speed optimized ( 64% )
+- Google page speed optimized ( 80% )
 - Open graph meta tag
 - Twitter card meta tag
 
@@ -80,11 +84,14 @@ If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/hargo-hugo/issues).
 
 ## Hargo Hugo Powered Websites
-- https://chivatazosapuestasdeportivas.com/
 - https://www.charmedflora.com/
+- https://earthcycles.com.au/
 - https://studiorisha.com/
+- https://urgrenki.ru/
+- https://pronosticosapuestastenis.com/
+- https://serimika.com/
 
- Want to submit your own website powered by Hargo Hugo? You can submit it [here](https://github.com/themefisher/hargo-hugo/discussions/33).
+ Want to submit your own website powered by Hargo Hugo? You can submit it [here](https://gethugothemes.com/showcase).
 
 <!-- licence -->
 ## License
@@ -114,6 +121,6 @@ If you need to customize the theme or complete website development from scratch,
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle/?utm_source=hargo_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Vex](https://demo.gethugothemes.com/thumbnails/vex.png)](https://gethugothemes.com/products/vex/) | [![Adrian](https://demo.gethugothemes.com/thumbnails/adrian.png)](https://gethugothemes.com/products/adrian/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=hargo_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Vex](https://demo.gethugothemes.com/thumbnails/vex.png)](https://gethugothemes.com/products/vex/) | [![Adrian](https://demo.gethugothemes.com/thumbnails/adrian.png)](https://gethugothemes.com/products/adrian/) |
 |:---:|:---:|:---:|
-| **Get 50+ Premium Hugo Themes Bundle** | **Vex** | **Adrian** |
+| **Get 55+ Premium Hugo Themes Bundle** | **Vex** | **Adrian** |
