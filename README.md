@@ -91,7 +91,7 @@ issue](https://github.com/themefisher/hargo-hugo/issues).
 - https://pronosticosapuestastenis.com/
 - https://serimika.com/
 
- Want to submit your own website powered by Hargo Hugo? You can submit it [here](https://gethugothemes.com/showcase).
+View all the websites powered by Hargo Hugo [here](https://gethugothemes.com/showcase).Want to submit your own website powered by Hargo Hugo? You can submit it [here](https://gethugothemes.com/showcase).
 
 <!-- licence -->
 ## License
