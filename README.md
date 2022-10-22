@@ -83,15 +83,15 @@ issues](https://github.com/themefisher/hargo-hugo/issues). Someone may have alre
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/hargo-hugo/issues).
 
-## Hargo Hugo Powered Websites
-- https://www.charmedflora.com/
-- https://earthcycles.com.au/
-- https://studiorisha.com/
-- https://urgrenki.ru/
-- https://pronosticosapuestastenis.com/
-- https://serimika.com/
+## Submit Your Website To Our Showcase
 
-View all the websites powered by Hargo Hugo [here](https://gethugothemes.com/showcase).Want to submit your own website powered by Hargo Hugo? You can submit it [here](https://gethugothemes.com/showcase).
+Are you using Hargo Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
+
+Our showcase aims to demonstrate to the world what amazing websites people like you have created utilizing our Hugo themes and to show that Hugo has tremendous capabilities as a Static Site Generator. 
+
+View all the websites powered by Hargo Hugo from [here](https://gethugothemes.com/showcase?theme=hargo). 
+
+[Submit](https://gethugothemes.com/showcase?submit=show) your Hargo Hugo powered website.
 
 <!-- licence -->
 ## License
