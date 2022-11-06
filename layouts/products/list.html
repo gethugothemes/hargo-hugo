@@ -25,6 +25,7 @@
           <div class="card-body">
             <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
             <p>{{ .Params.Description }}</p>
+            {{ if .Params.Price }}
             <div class="mb-4">
               {{ if .Params.PriceBefore }}
               <s>{{ site.Params.currencySymbol }}{{ .Params.PriceBefore }}</s>
@@ -36,6 +37,7 @@
               data-item-price="{{ .Params.Price }}" data-item-url="{{ .Permalink }}" data-item-description="{{ .Description }}">
               Add to cart
             </button>
+            {{ end }}
           </div>
         </div>
       </div>
