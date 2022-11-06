@@ -167,6 +167,7 @@
         {{ end }}
       </div>
       {{ range first 6 (where site.RegularPages "Type" "products") }}
+      {{ if not .IsSection }}
       {{ $image := "" }}
       {{ if .Params.Image }}
         {{ $image = .Params.Image | absURL }}
@@ -199,6 +200,7 @@
           </div>
         </div>
       </div>
+      {{ end }}
       {{ end }}
     </div>
   </div>
