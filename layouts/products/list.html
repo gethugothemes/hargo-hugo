@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       {{ range .Data.Pages }}
-      {{ if not .IsSection }}
+      {{ if site.Params.showProductSections | or (not .IsSection) }}
       {{ $image := "" }}
       {{ if .Params.Image }}
         {{ $image = .Params.Image | absURL }}
