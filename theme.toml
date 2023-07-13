@@ -9,7 +9,7 @@ homepage = "https://gethugothemes.com/products/hargo/"
 demosite = "https://demo.gethugothemes.com/hargo/"
 tags = ["Ecommerce", "bootstrap", "blog", "contact", "responsive", "gethugothemes", "clean" , "Single Product", "Minimal", "light", "google analytics", "disqus", "mobile", "fast", "customizable", "white", "flex", "pages", "hugo themes", "hugo templates", "netlify", "Themefisher"]
 features = ["Ecommerce", "responsive", "bootstrap-4"]
-min_version = "0.64.0 extended"
+min_version = "0.115.1 extended"
 
 [author]
   name = "Themefisher"
