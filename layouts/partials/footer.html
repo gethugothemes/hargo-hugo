@@ -6,7 +6,7 @@
             alt="{{ site.Title }}"></a>
       </div>
       <div class="col-md-3 col-sm-6">
-        <h5 class="font-weight-medium mb-4">Important Links</h5>
+        <h5 class="font-weight-medium mb-4">{{i18n `important_link`}}</h5>
         <ul class="list-unstyled">
           {{ range site.Menus.footer }}
           <li class="mb-3"><a class="text-color" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
@@ -14,7 +14,7 @@
         </ul>
       </div>
       <div class="col-md-4 col-sm-6">
-        <h5 class="font-weight-medium mb-4">Connect With Us</h5>
+        <h5 class="font-weight-medium mb-4">{{i18n `connect_us`}}</h5>
         <ul class="list-unstyled mb-5">
           <li class="mb-3"><a class="text-color" href="tel:{{ site.Params.mobile }}"><i
                 class="ti-mobile text-primary mr-2"></i>
