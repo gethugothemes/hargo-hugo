@@ -36,7 +36,7 @@ target = '$1'
 
 ############################# Outputs ##############################
 [outputs]
-home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+home = ["HTML", "RSS"]
 
 ############################# Imaging ##############################
 [imaging]
@@ -59,18 +59,6 @@ maxAge = "720h"
 [markup]
 [markup.goldmark.renderer]
 unsafe = true
-
-############################ Media types ############################
-[mediaTypes]
-[mediaTypes."application/manifest+json"]
-suffixes = ["webmanifest"]
-
-
-############################ Output Format ###########################
-[outputFormats]
-[outputFormats.WebAppManifest]
-mediaType = "application/manifest+json"
-rel = "manifest"
 
 ############################# Plugins ##############################
 [params.plugins]
