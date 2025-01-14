@@ -34,7 +34,7 @@
         {{ end }}
       </div>
       <div class="col-lg-7 col-md-6 order-1 order-lg-2">
-        <img src="{{ .image | absURL }}" class="img-fluid" alt="">
+        {{ partial "image.html" (dict "Src" .image "Alt" "image" "Class" "img-fluid") }}
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@
   <div class="container">
     <div class="row justify-content-around align-items-center">
       <div class="col-lg-5 col-md-6">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+        {{ partial "image.html" (dict "Src" .image "Alt" "image" "Class" "img-fluid") }}
       </div>
       <div class="col-md-6 col-lg-5">
         <h2>{{ .title | markdownify }}</h2>
@@ -82,7 +82,7 @@
       {{ range .materialItem }}
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="card border-0 text-center">
-          <img src="{{ .image | absURL }}" alt="material" class="card-img-top border-0">
+          {{ partial "image.html" (dict "Src" .image "Alt" "material" "Class" "card-img-top border-0") }}
           <div class="card-body">
             <h4>{{ .title | markdownify }}</h4>
             <p>{{ .content | markdownify }}</p>
@@ -113,7 +113,7 @@
         </ul>
       </div>
       <div class="col-md-6">
-        <img src="{{ .image | absURL}}" class="img-fluid" alt="">
+        {{ partial "image.html" (dict "Src" .image "Alt" "image" "Class" "img-fluid") }}
       </div>
     </div>
   </div>
@@ -130,7 +130,7 @@
     <div class="row align-items-center justify-content-between">
       <div class="col-lg-5 col-md-6">
         <div class="img-border rounded mb-5 mb-md-0">
-          <img src="{{ .videoThumb | absURL }}" alt="video thumb" class="img-fluid rounded">
+          {{ partial "image.html" (dict "Src" .videoThumb "Alt" "video thumb" "Class" "img-fluid rounded") }}
           <a data-toggle="modal" data-src="{{ .videoURL | safeURL }}" data-target="#videoModal2"
             class="text-color video-modal content-center"><i class="ti-control-play bg-gradient btn-play-lg"></i></a>
           <!-- Modal -->
@@ -171,7 +171,7 @@
         <div class="card border-0 text-center">
           <a href="{{ .Permalink }}">
             {{ range first 1 .Params.Images }}
-            <img src="{{ .image | absURL }}" alt="{{ .Title }}" class="card-img-top">
+            {{ partial "image.html" (dict "Src" .image "Alt" .Title  "Class" "card-img-top") }}
             {{ end }}
           </a>
           <div class="card-body">
@@ -213,7 +213,7 @@
       <div class="col-4">
         <div class="card border-primary text-center">
           <div class="card-body">
-            <img src="{{ .image | absURL }}" class="client-img" alt="{{ .name | markdownify }}">
+            {{ partial "image.html" (dict "Src" .image "Alt" .name "Class" "client-img") }}
             <p class="quoted">{{ .content | markdownify }}</p>
             <h6 class="font-weight-medium">{{ .name | markdownify }}</h6>
             <small>{{ .designation | markdownify }}</small>

@@ -10,7 +10,7 @@
         <div class="product-slider">
           {{ range .Params.Images }}
           <div data-image="{{ .image | absURL }}">
-            <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="product-img">
+            {{ partial "image.html" (dict "Src" .image "Alt" "product-img" "Class" "img-fluid w-100") }}
           </div>
           {{ end }}
         </div>
