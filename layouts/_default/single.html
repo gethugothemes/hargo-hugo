@@ -11,7 +11,7 @@
             <li class="list-inline-item"><i class="ti-calendar text-primary mr-2"></i>
               {{ .PublishDate.Format "02 Jan, 2006" }}</li>
           </ul>
-          <img src="{{ .Params.Image | absURL }}" alt="{{ .Title }}" class="img-fluid w-100 mb-4">
+          {{ partial "image.html" (dict "Src" .Params.Image "Alt" .Title "Class" "img-fluid w-100 mb-4") }}
           <div class="content">
             {{.Content}}
           </div>

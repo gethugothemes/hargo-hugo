@@ -3,7 +3,9 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="{{ site.BaseURL }}"><img class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
+      <a class="navbar-brand" href="{{ site.BaseURL }}">
+        {{ partial "image.html" (dict "Src" site.Params.logo "Alt" site.Title "Class" "img-fluid") }}
+      </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
       </button>

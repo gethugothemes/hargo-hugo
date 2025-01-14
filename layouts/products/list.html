@@ -10,7 +10,7 @@
         <div class="card border-0 text-center">
           <a href="{{ .Permalink }}">
             {{ range first 1 .Params.Images }}
-            <img src="{{ .image | absURL }}" alt="{{ .Title }}" class="card-img-top">
+            {{ partial "image.html" (dict "Src" .image "Alt" .Title "Class" "card-img-top") }}
             {{ end }}
           </a>
           <div class="card-body">

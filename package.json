@@ -1,6 +1,6 @@
 {
   "name": "hargo-hugo",
-  "version": "1.9.0",
+  "version": "2.9.0",
   "license": "UNLICENSED",
   "author": "gethugothemes",
   "scripts": {
@@ -11,6 +11,7 @@
     "build:example": "cd exampleSite; hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
     "test:example": "cd exampleSite; hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
     "project-setup": "node ./scripts/projectSetup.js",
-    "theme-setup": "node ./scripts/themeSetup.js"
+    "theme-setup": "node ./scripts/themeSetup.js",
+    "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy"
   }
 }
