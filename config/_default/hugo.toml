@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://demo.gethugothemes.com/hargo/site/"
+baseURL = "https://klaas-sysop.github.io/test/"
 languageCode = "en"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo-hugo"
