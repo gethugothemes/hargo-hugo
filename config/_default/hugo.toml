@@ -17,6 +17,7 @@ disqusShortname = "themefisher-template" # we use disqus to show comments in blo
 disableLanguages = [
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
+timeout = "500s"
 
 ############################# Build ##############################
 [build]
