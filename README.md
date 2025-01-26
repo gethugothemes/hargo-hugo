@@ -65,9 +65,6 @@ git clone git@github.com:themefisher/hargo-hugo.git
 # setup project
 $ npm run project-setup
 
-# install dependency
-npm install
-
 # Start local dev server
 $ npm run dev
 ```
