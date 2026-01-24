@@ -1,6 +1,6 @@
 <h1 align=center>Hargo Hugo</h1> 
 <p align=center> Hargo is a modern, sleek and fresh online store theme for Hugo.</p>
-<h2 align="center"><a target="_blank" href="https://demo.gethugothemes.com/hargo" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fhargo%2Fsite%2F&form_factor=desktop">Page Speed (80%)🚀</a> </h2>
+<h2 align="center"><a target="_blank" href="https://hargo-hugo-site.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-hargo-hugo-site-vercel-app/u2xjn6y0fm?form_factor=desktop">Page Speed (80%)🚀</a> </h2>
 
 
 
