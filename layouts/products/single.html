@@ -51,7 +51,9 @@
             <div class="content">{{ .Content }}</div>
           </div>
           <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-            {{ template "_internal/disqus.html" . }}
+            {{ if site.Params.open_remark.enable }}
+              {{ partial "open-remark.html" . }}
+            {{ end }}
           </div>
         </div>
       </div>

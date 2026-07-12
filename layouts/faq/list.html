@@ -2,7 +2,7 @@
 
 {{ partial "page-title.html" . }}
 
-{{ if site.Data.contact.contact.enable }}
+{{ if hugo.Data.contact.contact.enable }}
 <section class="section pt-0">
   <div class="container">
     <div class="row">
@@ -21,7 +21,7 @@
           <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Send Now</button>
         </form>
       </div></div>
-      {{ with site.Data.faq}}
+      {{ with hugo.Data.faq}}
       <div class="col-lg-7 offset-lg-1">
         <div id="accordion" class="mt-5">
           {{ $.Scratch.Set "counter" 0 }}

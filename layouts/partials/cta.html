@@ -1,6 +1,6 @@
 <!-- call to  action -->
-{{ if site.Data.homepage.cta.enable }}
-{{ with site.Data.homepage.cta }}
+{{ if hugo.Data.homepage.cta.enable }}
+{{ with hugo.Data.homepage.cta }}
 <section class="py-4 bg-gradient position-relative">
   {{ partial "image.html" (dict "Src" .overlayImage "Alt" "image" "Class" "img-fluid overlay-image") }}
   <div class="container">

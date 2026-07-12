@@ -2,12 +2,12 @@
 
 {{ partial "page-title.html" . }}
 
-{{ if site.Data.contact.contact.enable }}
+{{ if hugo.Data.contact.contact.enable }}
 <section class="section pt-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-sm-6">
-        {{ with site.Data.contact.contact.office }}
+        {{ with hugo.Data.contact.contact.office }}
         <h3 class="mb-4">{{ .title | markdownify }}</h3>
         <p>{{ .content | markdownify }}</p>
         {{ end }}
@@ -23,7 +23,7 @@
         </ul>
       </div>
       <div class="col-lg-3 offset-lg-1 col-sm-6">
-        {{ with site.Data.contact.contact.opennigHour }}
+        {{ with hugo.Data.contact.contact.opennigHour }}
         <h3 class="mb-4">{{ .title | markdownify }}</h3>
         <ul class="list-unstyled">
           {{ range .dayTimeList }}
@@ -47,7 +47,7 @@
 </section>
 {{ end }}
 
-{{ if site.Data.contact.map.enable }}
+{{ if hugo.Data.contact.map.enable }}
 <section class="section pt-0">
   <div class="container">
     <div id="map_canvas" data-latitude="{{ with site.Params.mapLatitude }} {{ . }} {{ end }}"

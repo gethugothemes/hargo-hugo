@@ -7,9 +7,9 @@ licenselink = "https://github.com/themefisher/Hargo-hugo-ecommerce-theme/blob/ma
 description = "Hargo is an E-commerce theme powered by Hugo and Snipcart. It's fully functional, users can order items and also payments throw this theme"
 homepage = "https://gethugothemes.com/products/hargo/"
 demosite = "https://demo.gethugothemes.com/hargo/"
-tags = ["Ecommerce", "bootstrap", "blog", "contact", "responsive", "gethugothemes", "clean" , "Single Product", "Minimal", "light", "google analytics", "disqus", "mobile", "fast", "customizable", "white", "flex", "pages", "hugo themes", "hugo templates", "netlify", "Themefisher"]
+tags = ["Ecommerce", "bootstrap", "blog", "contact", "responsive", "gethugothemes", "clean" , "Single Product", "Minimal", "light", "google analytics", "mobile", "fast", "customizable", "white", "flex", "pages", "hugo themes", "hugo templates", "netlify", "Themefisher"]
 features = ["Ecommerce", "responsive", "bootstrap-4"]
-min_version = "0.147.2 extended"
+min_version = "0.163.3 extended"
 
 [author]
   name = "Themefisher"

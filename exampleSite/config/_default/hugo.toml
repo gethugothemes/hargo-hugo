@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "/"
-languageCode = "en"
+locale = "en"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -11,8 +11,6 @@ pagination.pagerSize = 10 # see https://gohugo.io/extras/pagination/
 summaryLength = 20 # see https://gohugo.io/content-management/excerpts/
 # google analytics
 googleAnalytics = "UA-123456-78" # example: UA-123456-78, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
-# disqus short name
-disqusShortname = "themefisher-template" # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 # disable language
 disableLanguages = [
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
@@ -44,7 +42,7 @@ home = ["HTML", "RSS"]
 # See https://github.com/disintegration/imaging
 # Default JPEG or WebP quality setting. Default is 75.
 quality = 90
-resampleFilter = "lanczos"
+resampleFilter = "Lanczos"
 
 
 ############################# Caches ###############################
@@ -145,3 +143,9 @@ link = "#"
 # Contact Form
 [params.contact]
 formAction = "#" # contact form works with formspree.io
+
+# OpenRemark Comment
+[params.open_remark]
+enable = true
+site_key = "cmqnb3wd5000104kww7862ku4" # your site key from the OpenRemark dashboard
+embed_url = "https://open-remark.zeon.studio/embed.js"
